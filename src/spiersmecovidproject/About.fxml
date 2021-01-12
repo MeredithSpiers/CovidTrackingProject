@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="522.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spiersmecovidproject.AboutController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="520.0" prefWidth="640.0" spacing="15.0" AnchorPane.bottomAnchor="-31.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="About" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This application was developed by Meredith Spiers, who studies Information Technology at the University of Missouri." wrappingWidth="500.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This application allows users to select a COVID-19 related data set (e.g., the number of cases, hospitalizations, recoveries, or deaths over time) collected from all 50 states and 6 territories of the United States and view that data in a graph." wrappingWidth="500.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <ToolBar prefHeight="40.0" prefWidth="640.0">
+        <items>
+          <Button mnemonicParsing="false" onAction="#handleGoToGraph" text="Graph">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+        </items>
+      </ToolBar>
+   </children>
+</AnchorPane>

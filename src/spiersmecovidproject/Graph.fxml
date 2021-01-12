@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spiersmecovidproject.GraphController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="500.0" prefWidth="640.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Covid-19 in the United States" underline="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="graphLabel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <LineChart fx:id="covidLineChart" horizontalGridLinesVisible="false" prefHeight="303.0" prefWidth="640.0" verticalGridLinesVisible="false">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis" minorTickCount="0" side="LEFT" tickLabelGap="0.0" upperBound="0.0" />
+              </yAxis>
+            </LineChart>
+            <ComboBox fx:id="combo" onAction="#selectData" prefWidth="150.0" promptText="Select Data Set" />
+         </children>
+      </VBox>
+      <ToolBar prefHeight="21.0" prefWidth="640.0">
+         <items>
+          <Button mnemonicParsing="false" onAction="#handleGoToAbout" text="About">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </items>
+      </ToolBar>
+   </children>
+</AnchorPane>
